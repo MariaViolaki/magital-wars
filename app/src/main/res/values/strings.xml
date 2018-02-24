@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Magital Wars</string>
+    <string name="welcome">Welcome to Magital Wars!</string>
+    <string name="developers">Developers</string>
+    <string name="wizards">Wizards</string>
+    <string name="games">RPG Games</string>
+    <string name="magic">Ice Magic</string>
+    <string name="virus">Virus</string>
+    <string name="toadstools">Toadstools</string>
+    <string name="gates">Call Bill Gates</string>
+    <string name="merlin">Call Merlin</string>
+    <string name="debug">Debug</string>
+    <string name="heal">Heal</string>
+    <string name="reset">Reset Score</string>
+    <string name="developers_win">Developers Win!</string>
+    <string name="wizards_win">Wizards Win!</string>
+    <string name="maximum_score">Maximum score is 100.</string>
+</resources>

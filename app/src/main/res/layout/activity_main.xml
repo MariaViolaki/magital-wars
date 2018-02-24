@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.example.android.magitalwars.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/medium_space"
+        android:paddingEnd="@dimen/small_space"
+        android:paddingStart="@dimen/small_space"
+        android:paddingTop="@dimen/medium_space">
+
+        <TextView
+            style="@style/default_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/medium_space"
+            android:text="@string/welcome"
+            android:textSize="@dimen/large_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/small_space">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/developers"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/developers_score_textview"
+                    style="@style/score_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="@dimen/huge_text" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/small_space"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/default_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/wizards"
+                    android:textSize="@dimen/medium_text" />
+
+                <TextView
+                    android:id="@+id/wizards_score_textview"
+                    style="@style/score_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text=""
+                    android:textSize="@dimen/huge_text" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/small_space">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/developer" />
+
+            <View
+                android:layout_width="@dimen/small_space"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/wizard" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/developers_damage"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="developersDamage"
+                    android:text="@string/games" />
+
+                <Button
+                    android:id="@+id/developers_constant_damage"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tiny_space"
+                    android:layout_marginTop="@dimen/tiny_space"
+                    android:onClick="developersConstantDamage"
+                    android:text="@string/virus" />
+
+                <Button
+                    android:id="@+id/developers_summon"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="developersSummon"
+                    android:text="@string/gates" />
+
+                <Button
+                    android:id="@+id/developers_healing"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tiny_space"
+                    android:layout_marginTop="@dimen/tiny_space"
+                    android:onClick="developersHealing"
+                    android:text="@string/debug" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/small_space"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/wizards_damage"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="wizardsDamage"
+                    android:text="@string/magic" />
+
+                <Button
+                    android:id="@+id/wizards_constant_damage"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tiny_space"
+                    android:layout_marginTop="@dimen/tiny_space"
+                    android:onClick="wizardsConstantDamage"
+                    android:text="@string/toadstools" />
+
+                <Button
+                    android:id="@+id/wizards_summon"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="wizardsSummon"
+                    android:text="@string/merlin" />
+
+                <Button
+                    android:id="@+id/wizards_healing"
+                    style="@style/LightButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/tiny_space"
+                    android:layout_marginTop="@dimen/tiny_space"
+                    android:onClick="wizardsHealing"
+                    android:text="@string/heal" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/DarkButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/huge_space"
+            android:layout_marginStart="@dimen/huge_space"
+            android:layout_marginTop="@dimen/large_space"
+            android:onClick="reset"
+            android:text="@string/reset" />
+
+
+    </LinearLayout>
+
+</ScrollView>
